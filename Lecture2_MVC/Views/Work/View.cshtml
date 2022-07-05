@@ -1,0 +1,22 @@
+﻿@model List<CarModel>
+@{
+    ViewData["Title"] = "Car";
+}
+@foreach (var t in Model)
+{
+    <p>
+        <strong>Model:</strong> <code>@t.Model</code>
+    </p>
+    <p>
+        <strong>Year:</strong> <code>@t.Year</code>
+    </p>
+
+    <p>
+        <strong>Color:</strong> <code>@t.Color</code>
+    </p>
+    <h1>
+        Next:
+        </h1>
+}
+
+
